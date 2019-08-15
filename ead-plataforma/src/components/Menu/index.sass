@@ -1,0 +1,86 @@
+@import '../../theme'
+
+.menu
+  width: 200px
+  background: $branco
+  height: 100%
+  position: fixed  
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05)
+
+.logo
+  width: 100%
+  height: 75px
+  background: $principal
+  display: flex
+  justify-content: center
+  align-items: center
+
+.menu-lista
+  margin-top: 15px
+
+.item-menu
+  display: flex
+  flex-direction: row
+  align-items: center
+  height: 40px
+  padding-left: 15px
+  cursor: pointer
+  margin-bottom: 5px
+  animation-name: slidein
+  animation-duration: 0.2s
+
+.item-menu p
+  color: #8a8a8a
+  margin-left: 5px
+
+.menu-sup
+  width: 100%
+  height: 50px
+  background: $principal
+
+.menu-conteudo
+  width: 100%
+  height: calc(100% - 75px)
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.menu-sup
+  cursor: pointer
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+.menu-sup h2
+  color: $branco
+  font-size: 14px
+  margin-left: 5px
+
+.icon
+  margin-left: 80px
+  display: none
+  position: absolute
+
+@media only screen and (max-width: 955px) 
+  .menu
+    display: none
+  
+  .icon
+    display: inline
+
+.menu-exibir
+  width: 200px
+  background: $branco
+  height: 100%
+  position: fixed  
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05)
+  animation-name: slidein
+  animation-duration: 0.2s
+
+@keyframes slidein 
+  from 
+    width: 0%
+  
+  to 
+    width: 200px
